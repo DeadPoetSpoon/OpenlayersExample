@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DeadPoetSpoon</title>
+    <link href="images/favicon.ico" rel="SHORTCUT ICON">
+    <link rel="stylesheet" href="./js/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/ol/ol.css">
+    <script src="./js/bootstrap/jquery.min.js"></script>
+    <script src="./js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/ol/ol.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h3 class="text-center text-info">
+                    综合搜索模块
+                </h3>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-9 column">
+                <div class="well well-sm" id="map" style="width: 100%; height: 650px;"></div>
+            </div>
+            <div class="col-md-3 column well well-sm" style="height: 650px;">
+                <!--<form role="form">
+                    <label>Geometry type &nbsp;</label>
+                    <select id="qgt" class="form-control">
+                        <option value="Polygon">Polygon</option>
+                        <option value="Circle">Circle</option>
+                    </select>
+                </form>-->
+                <form role="form">
+                    <label>Layer &nbsp;</label>
+                    <select id="qglt" class="form-control">
+                        <option value="capital">capital</option>
+                        <option value="railway">railway</option>
+                        <option value="road">road</option>
+                        <option value="river">river</option>
+                        <option value="china_boundary">china_boundary</option>
+                        <option value="province_boundary">province_boundary</option>
+                    </select>
+                </form><br>
+                <button type="button" class="btn btn-primary btn-block btn-default" id="gqb">点击按钮开始画区域</button>
+                <br><br>
+                <form role="form">
+                    <label>Layer &nbsp;</label>
+                    <select id="tqlt" class="form-control">
+                        <option value="OLMAP:capital">capital</option>
+                        <option value="OLMAP:railway">railway</option>
+                        <option value="OLMAP:road">road</option>
+                        <option value="OLMAP:river">river</option>
+                        <option value="OLMAP:china_boundary">china_boundary</option>
+                        <option value="OLMAP:province_boundary">province_boundary</option>
+                    </select>
+                </form>
+                <input type="text" class="form-control" id="tqi"
+                        placeholder="Yakeshi" />
+                <br>
+                <button type="button" class="btn btn-primary btn-block btn-default" id="tqb">查询</button>
+                <!--<textarea class="form-control" rows="10" id="info" readonly></textarea>-->
+                <div class="panel-group" id="info"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/MultiSearch.js"></script>
+</body>
+</html>

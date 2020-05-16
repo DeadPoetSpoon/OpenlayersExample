@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DeadPoetSpoon</title>
+    <link href="images/favicon.ico" rel="SHORTCUT ICON">
+    <link rel="stylesheet" href="./js/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/ol/ol.css">
+    <script src="./js/bootstrap/jquery.min.js"></script>
+    <script src="./js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/ol/ol.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h3 class="text-center text-info">
+                    框选模块
+                </h3>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-9 column">
+                <div class="well well-sm" id="map" style="width: 100%; height: 650px;"></div>
+            </div>
+            <div class="col-md-3 column well well-sm" style="height: 650px;">
+                <h4><span class="label label-default">框选目标:</span></h4>
+                <textarea class="form-control" rows="12" id="info" readonly></textarea>
+                <span class="help-block">按住Ctrl，单击拖动来画框。</span>
+            </div>
+        </div>
+    </div>
+    <script src="./js/BoxSelection.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DeadPoetSpoon</title>
+    <link href="images/favicon.ico" rel="SHORTCUT ICON">
+    <link rel="stylesheet" href="./js/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/ol/ol.css">
+    <script src="./js/bootstrap/jquery.min.js"></script>
+    <script src="./js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/ol/ol.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h3 class="text-center text-info">
+                    GetFeature模块
+                </h3>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-9 column">
+                <div class="well well-sm" id="map" style="width: 100%; height: 650px;"></div>
+            </div>
+            <div class="col-md-3 column well well-sm" style="height: 650px;">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="KeySearchCon"
+                        placeholder="输入铁路名拼音搜索铁路线。" />
+                    <span class="input-group-btn"><button type="button"
+                            class="btn btn-primary btn-default"
+                            id="Btn_KeySearch">搜索</button>
+                    </span>
+                </div>
+            </div>
+    </div>
+    <script src="./js/GetFeature.js"></script>
+</body>
+</html>
